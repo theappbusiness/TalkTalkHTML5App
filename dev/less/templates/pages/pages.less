@@ -1,0 +1,114 @@
+@import "../../baseplate.env.constants.less";
+@import "../../baseplate.grid.api.less";
+@import "../../baseplate.grid.constants.less";
+	
+/* ----------------------------------------
+  BEGIN : generic page styles
+	----------------------------------------- */	
+	
+body {
+	background: #111 url('../../../img/site-bg.png') 0 0 repeat;
+  font-family: 'OmnesMedium';
+	color: #fff;
+}
+  
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: #eee;
+}  
+  
+h1,
+h2,
+h3, {  
+  font-family: 'OmnesMedium';
+}
+
+/* added general focus state for Accessibility */
+a:focus, a:active, input:focus {
+	text-decoration: none;
+}
+
+#wrapper {
+	text-align:center; 
+}
+
+#container {	
+	position: relative;
+	margin: 0 auto;	
+	background: transparent url('../../../img/site-overlay-bg.png') center 0 no-repeat;
+	display:inline-block; 
+	text-align: left;
+  min-height: 900px;
+
+  .contentWidth();
+
+  padding-top: 82px;
+}
+
+#content-subnav, 
+#content,
+#content-related {
+  zoom: 1;
+}
+
+/*	
+  END : generic page styles
+  ------------------------------------------ */	
+	
+/* ----------------------------------------
+  BEGIN : Utilities
+	----------------------------------------- */
+
+  /* mitigate IE 5,6 double margin on floats bug */
+  .ie6 .floatfix {
+  	display: inline;
+  }
+
+  /* mitigate IE haslayout issues */
+  #container div, #container ul, #container ol {
+  	zoom: 1;
+  }
+
+  /* IR Images Off */
+  .ir-io {
+  	position: relative;
+  	font-size: 77%;
+  	font-weight: bold;
+  }
+
+  .ir-io span  {
+  	position: absolute;
+  	z-index: 49;
+  	display: block;
+  	top: 0;
+  	left: 0;
+  	/* standardised height */
+  	height: 20px;
+  	width: 100px;
+  	background: url("h_defaultimage.gif") 0 0 no-repeat;
+  }  
+
+/*	
+  END : Utilities
+  ------------------------------------------ */	
+
+/**
+ * 
+ * Page specific styles here 
+ *
+ */
+
+/* ----------------------------------------
+  BEGIN : .pg-chassis-home, .pg-baseplate-home
+	----------------------------------------- */
+
+
+
+
+/*	
+  END : .pg-chassis-home, .pg-baseplate-home
+  ------------------------------------------ */
+  

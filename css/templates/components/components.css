@@ -1,0 +1,280 @@
+.top { top:0px; }
+.right { right:20px; }
+.bottom { bottom:0px; }
+.left { left:20px; }
+.gutterLeft { left:0px; }
+.gutterRight { right:0px; }
+.firstGutterLeft { left:20px; }
+.lastGutterRight { right:20px; }
+.contentWidth { width:980px; }
+.contentWidthWithoutSideGutters { width:940px; }
+.width { width:-20px; }
+.height { height:0px; }
+.marginTop { margin-top:0px; }
+.marginRight { margin-right:20px; }
+.marginBottom { margin-bottom:0px; }
+.marginLeft { margin-left:20px; }
+.marginLeftGutter { margin-left:0px; }
+.marginRightGutter { margin-right:0px; }
+.firstGutterLeftMargin { margin-left:20px; }
+.lastGutterRightMargin { margin-right:20px; }
+.paddingLeftGutter { padding-left:-20px; }
+.paddingRightGutter { padding-right:-20px; }
+.paddingTop { padding-top:0px; }
+.paddingRight { padding-right:0px; }
+.paddingBottom { padding-bottom:0px; }
+.paddingLeft { padding-left:0px; }
+.firstGutterLeftPadding { padding-left:20px; }
+.lastGutterRightPadding { padding-right:20px; }
+#header {
+  position:absolute;
+  top:0;
+  height:82px;
+  width:100%;
+  background:transparent url('../../../img/header-bg.png') 0 0 repeat;
+}
+#header ul li {
+  list-style-type:none;
+  float:left;
+}
+#logo {
+  margin-left:10px;
+  height:64px;
+  width:284px;
+  background:transparent url('../../../img/talktalk-xfactor-logo.png') 0 0 no-repeat;
+}
+.header-wrap {
+  position:relative;
+  margin:0 auto;
+  width:980px;
+}
+#hero { position:relative; }
+#main-promo {
+  position:relative;
+  float:left;
+  margin-top:32px;
+  margin-left:20px;
+  margin-right:20px;
+  height:304px;
+}
+#main-promo .prev {
+  float:left;
+  height:100%;
+  width:60px;
+  background:transparent url('../../../img/promo-back-previous-sprite.png') 0 112px no-repeat;
+}
+#main-promo .next {
+  float:left;
+  height:100%;
+  width:60px;
+  background:transparent url('../../../img/promo-back-previous-sprite.png') -60px 112px no-repeat;
+}
+#main-promo .prev:hover { background:transparent url('../../../img/promo-back-previous-sprite.png') -120px 112px no-repeat; }
+#main-promo .next:hover { background:transparent url('../../../img/promo-back-previous-sprite.png') -179px 112px no-repeat; }
+#main-promo #carousel {
+  float:left;
+  height:100%;
+  width:500px;
+}
+#main-promo .page {
+  cursor:pointer;
+  height:304px;
+  width:500px;
+  margin:0 auto;
+  color:#ffffff;
+}
+#main-feature {
+  position:relative;
+  float:left;
+  margin-top:40px;
+  width:300px;
+  height:304px;
+}
+#main-feature h2 {
+  font-size:40px;
+  line-height:48px;
+}
+#main-feature p {
+  margin-top:8px;
+  font-size:16px;
+  line-height:24px;
+}
+#main-feature .btn-create-video {
+  position:absolute;
+  bottom:48px;
+  display:block;
+  height:60px;
+  width:300px;
+  background:transparent url('../../../img/btn-create-your-video.png') 0 0 no-repeat;
+}
+#main-feature .btn-create-video:hover { background-position:0 -63px; }
+#pagination-control {
+  position:absolute;
+  z-index:100;
+  height:20px;
+  background:rgba(0,0,0,0.75);
+  padding:0;
+  left:80px;
+  bottom:0;
+  -webkit-border-radius:10px;
+}
+#pagination-control li {
+  display:block;
+  float:left;
+  width:14px;
+  height:14px;
+  line-height:14px;
+  -webkit-border-radius:7px;
+  background:rgba(255,255,255,0.1);
+  overflow:hidden;
+  padding:0;
+  margin:3px 11px 0 0;
+  text-align:center;
+}
+#pagination-control li.prev {
+  margin-left:5px;
+  background:transparent;
+}
+#pagination-control li.next {
+  margin-right:0;
+  background:transparent;
+}
+#pagination-control li.selected { background:#ffffff; }
+#talktalk-links {
+  width:380px;
+  position:absolute;
+  top:40px;
+  left:580px;
+}
+#talktalk-links a { font-family:'OmnesRegular'; }
+#talktalk-links li { position:absolute; }
+#talktalk-links .xfactor { left:100px; }
+#talktalk-links .btn-facebook {
+  left:200px;
+  width:60px;
+}
+#talktalk-links .btn-twitter {
+  left:300px;
+  width:60px;
+}
+#categories {
+  clear:both;
+  margin-left:20px;
+  margin-bottom:16px;
+  height:51px;
+  width:100%;
+}
+#categories a {
+  float:left;
+  height:100%;
+  background:transparent url('../../../img/tab-bar-sprite.png') 0 0 no-repeat;
+}
+#categories .home {
+  width:150px;
+  background-position:0 0;
+}
+#categories .televised {
+  width:150px;
+  background-position:-150px 0;
+}
+#categories .songs {
+  width:150px;
+  background-position:-299px 0;
+}
+#categories .popular {
+  width:150px;
+  background-position:-449px 0;
+}
+#categories .friends {
+  width:150px;
+  background-position:-599px 0;
+}
+#categories .home:hover {
+  width:150px;
+  background-position:0 -51px;
+}
+#categories .televised:hover {
+  width:150px;
+  background-position:-150px -51px;
+}
+#categories .songs:hover {
+  width:150px;
+  background-position:-299px -51px;
+}
+#categories .popular:hover {
+  width:150px;
+  background-position:-449px -51px;
+}
+#categories .friends:hover {
+  width:150px;
+  background-position:-599px -51px;
+}
+#categories.home .home {
+  width:150px;
+  background-position:0 -102px;
+}
+#categories.televised .televised {
+  width:150px;
+  background-position:-150px -102px;
+}
+#categories.songs .songs {
+  width:150px;
+  background-position:-299px -102px;
+}
+#categories.popular .popular {
+  width:150px;
+  background-position:-449px -102px;
+}
+#categories.friends .friends {
+  width:150px;
+  background-position:-599px -102px;
+}
+#categories .search {
+  float:left;
+  margin-top:14px;
+  width:190px;
+  padding-left:10px;
+}
+#categories .search .searchfield { width:100px; }
+#videos { margin-left:20px; }
+#videos a {
+  float:left;
+  position:relative;
+  height:165px;
+  width:235px;
+}
+#videos a:hover {
+  height:165px;
+  width:235px;
+  outline:1px solid #ec0775;
+}
+#videos .details {
+  position:absolute;
+  bottom:0;
+  background:transparent url('../../../img/video-details-bg.png') 0 0 no-repeat;
+  height:76px;
+  width:100%;
+}
+#videos .details .user-name {
+  margin-top:7px;
+  padding-left:18px;
+  width:200px;
+  height:16px;
+  overflow:hidden;
+}
+#videos .details .song {
+  padding-left:18px;
+  color:#909090;
+  width:200px;
+  height:16px;
+  overflow:hidden;
+}
+#videos .details .views {
+  margin-left:18px;
+  padding-left:24px;
+  background:transparent url('../../../img/icon-views.png') 0 2px no-repeat;
+  color:#909090;
+  width:175px;
+  height:16px;
+  overflow:hidden;
+}

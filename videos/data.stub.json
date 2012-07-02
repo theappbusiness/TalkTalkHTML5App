@@ -1,0 +1,66 @@
+{
+    "id": 123,
+    "email": "jonathan@theappbusiness.com",
+    "name": "Jonathan Conway",
+    "signed_up_at": "2012-06-09T15:33:02Z",
+    "is_admin": false,
+    "number_of_videos": 10,
+    "videos": [{
+        "guid": "efg235d",
+        "title": "my cool video #1",
+        "video_location ": "s3_bucket_url",
+        "created_at": "2012-06-10T15:41:52Z"
+    }, {
+        "guid": "defg234e",
+        "name": "my cool video #2",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+
+    {
+        "guid": "33333333",
+        "name": "my cool video #3",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+    {
+        "guid": "44444444",
+        "name": "my cool video #4",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+    {
+        "guid": "55555555",
+        "name": "my cool video #5",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+    {
+        "guid": "66666666",
+        "name": "my cool video #6",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },{
+        "guid": "77777777",
+        "name": "my cool video #7",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },{
+        "guid": "88888888",
+        "name": "my cool video #8",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+    {
+        "guid": "99999999",
+        "name": "my cool video #9",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    },
+    {
+        "guid": "10101010",
+        "name": "my cool video 10",
+        "video_location": "s3_bucket_url2",
+        "created_at": "2012-06-10T15:41:52Z"
+    }]
+}

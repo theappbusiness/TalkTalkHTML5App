@@ -1,0 +1,403 @@
+@import "../../baseplate.env.constants.less";
+@import "../../baseplate.grid.api.less";
+@import "../../baseplate.grid.constants.less";
+
+
+/* ----------------------------------------
+  BEGIN : header
+	----------------------------------------- */
+
+#header {
+  position: absolute;
+  top: 0;
+  height: 82px;
+  width: 100%;
+  background: transparent url('../../../img/header-bg.png') 0 0 repeat;
+}
+
+#header ul li {
+  list-style-type: none;
+  float: left;
+}
+
+#logo {
+  margin-left: @gutter/2;
+  height: 64px;
+  width: 284px;
+  background: transparent url('../../../img/talktalk-xfactor-logo.png') 0 0 no-repeat;
+}
+
+.header-wrap {
+  position: relative;
+  margin: 0 auto; 
+  .contentWidth();
+}
+
+/*	
+  END : header
+  ------------------------------------------ */
+
+
+/* ----------------------------------------
+  BEGIN : main-promo
+  ----------------------------------------- */
+
+#hero {
+  position: relative;
+} 
+
+#main-promo {
+  position: relative;
+  float: left;
+  .marginTop(2);
+  margin-left: @gutter;
+  margin-right: @gutter;
+
+}
+
+#main-promo .prev,
+#main-promo .next {
+  float: left;
+  height: 100%;
+  width: @column;
+}
+
+#main-promo .prev {
+  background: transparent url('../../../img/promo-back-previous-sprite.png') 0 @baseline*7 no-repeat;
+}
+
+#main-promo .next {
+  background: transparent url('../../../img/promo-back-previous-sprite.png') -60px @baseline*7 no-repeat;
+}
+
+#main-promo .prev:hover {
+  background: transparent url('../../../img/promo-back-previous-sprite.png') -120px @baseline*7 no-repeat;
+}
+
+#main-promo .next:hover {
+  background: transparent url('../../../img/promo-back-previous-sprite.png') -179px @baseline*7 no-repeat;
+}
+
+#main-promo #carousel {
+  float: left;
+  height: 100%;
+  width: (@gutter*7) + (@column*6);
+}
+
+#main-promo .page {
+  cursor: pointer;
+  height: (@baseline * 19);
+  width: (@gutter*7) + (@column*6);
+  margin: 0 auto;
+  color: #fff;
+}
+
+#main-promo {
+   height: (@baseline * 19);
+}
+
+#main-feature {
+  position: relative;
+  float: left;
+  .marginTop(2.5);
+  .width(4);
+  height: (@baseline * 19);
+}
+
+#main-feature h2 {
+  font-size: 40px;
+  line-height: @baseline*3;
+}
+
+#main-feature p {
+    .marginTop(.5);
+   font-size: 16px;
+   line-height: @baseline + (@baseline/2);
+}
+
+#main-feature .btn-create-video {
+  position: absolute;
+  bottom: @baseline*3;
+  display: block;
+  height: 60px;
+  width: 300px;
+  background: transparent url('../../../img/btn-create-your-video.png') 0 0 no-repeat;
+}
+
+#main-feature .btn-create-video:hover {
+  background-position: 0 -63px;
+}
+
+/*  
+  END : main-promo
+  ------------------------------------------ */
+
+
+/* ----------------------------------------
+  BEGIN : pagination-control
+  ----------------------------------------- */
+
+#pagination-control {
+  position:absolute;
+  z-index:100;
+  height:20px;
+  background:rgba(0,0,0,0.75);
+  padding:0;
+  left: @column + @gutter;
+  bottom: 0;
+  -webkit-border-radius:10px;
+}
+
+#pagination-control li {
+  display:block;
+  float:left;
+  width:14px;
+  height:14px; line-height:14px;
+  -webkit-border-radius:7px;
+  background:rgba(255,255,255,0.1);
+  overflow:hidden;
+  padding:0;
+  margin:3px 11px 0 0;
+  text-align:center;
+}
+
+#pagination-control li.prev {
+  margin-left:5px;
+  background:transparent;
+}
+
+#pagination-control li.next {
+  margin-right:0;
+  background:transparent;
+}
+
+#pagination-control li.selected {
+  background:#fff;
+}
+
+/*  
+  END : pagination-control
+  ------------------------------------------ */
+
+/* ----------------------------------------
+  BEGIN : header-links
+  ----------------------------------------- */
+
+  #talktalk-links {
+    width: (@column * 5) + (@gutter * 4);
+    position: absolute;
+    .top(2.5);
+    .left(7);
+  }
+
+  #talktalk-links a {
+     font-family: 'OmnesRegular';
+  }
+
+  #talktalk-links li {
+    position: absolute;
+  }
+
+  #talktalk-links .talk-talk-tv {
+
+  }
+
+  #talktalk-links .xfactor {
+    left: (@column * 1) + (@gutter * 2);
+  }
+
+  #talktalk-links .btn-facebook {
+    left: (@column * 3) + (@gutter * 1);
+    .width(1);
+  }
+
+  #talktalk-links .btn-twitter {
+    left: (@column * 4) + (@gutter * 3);
+    .width(1); 
+  }
+  /*  
+  END : header-links
+  ------------------------------------------ */
+
+
+
+/* ----------------------------------------
+  BEGIN : tabs
+  ----------------------------------------- */
+
+#categories {
+  clear: both;
+  .firstGutterLeftMargin(1);
+  .marginBottom(1);
+  height: 51px;
+  width: 100%;
+}
+
+#categories a {
+  float: left;
+  height: 100%;
+  background: transparent url('../../../img/tab-bar-sprite.png') 0 0 no-repeat;
+}
+
+#categories .home {
+  width: 150px;
+  background-position: 0 0;
+}
+
+#categories .televised {
+  width: 150px;
+  background-position: -150px 0;
+}
+
+#categories .songs {
+  width: 150px;
+  background-position: -299px 0;
+}
+
+#categories .popular {
+  width: 150px;
+  background-position: -449px 0;
+}
+
+#categories .friends {
+  width: 150px;
+  background-position: -599px 0;
+}
+
+/* hover states */
+
+#categories .home:hover {
+  width: 150px;
+  background-position: 0 -51px;
+}
+
+#categories .televised:hover {
+  width: 150px;
+  background-position: -150px -51px;
+}
+
+#categories .songs:hover {
+  width: 150px;
+  background-position: -299px -51px;
+}
+
+#categories .popular:hover {
+  width: 150px;
+  background-position: -449px -51px;
+}
+
+#categories .friends:hover {
+  width: 150px;
+  background-position: -599px -51px;
+}
+
+
+/* on states */
+#categories.home .home {
+  width: 150px;
+  background-position: 0 -102px;
+}
+
+#categories.televised .televised {
+  width: 150px;
+  background-position: -150px -102px;
+}
+
+#categories.songs .songs {
+  width: 150px;
+  background-position: -299px -102px;
+}
+
+#categories.popular .popular {
+  width: 150px;
+  background-position: -449px -102px;
+}
+
+#categories.friends .friends {
+  width: 150px;
+  background-position: -599px -102px;
+}
+
+#categories .search {
+  float: left;
+  margin-top: 14px;
+  width: 190px;
+  padding-left: 10px;
+}
+
+#categories .search .searchfield {
+  width: 100px;
+}
+
+/*  
+  END : tabs
+  ------------------------------------------ */
+
+/* ----------------------------------------
+  BEGIN : videos
+  ----------------------------------------- */
+
+#videos {
+  margin-left: @gutter;
+}
+
+/*
+#videos .videos-row {
+  .height(10);
+}
+*/
+#videos a {
+  float: left;
+  position: relative;
+  height: 165px;
+  width: 235px;
+}
+
+
+#videos a:hover {
+  height: 165px;
+  width: 235px;
+  outline: 1px solid #ec0775;
+}
+
+#videos .details {
+  position: absolute;
+  bottom: 0;
+  background: transparent url('../../../img/video-details-bg.png') 0 0 no-repeat;
+  height: 76px;
+  width: 100%;
+}
+
+#videos .details .user-name {
+  margin-top: 7px;
+  padding-left: 18px;
+  width: 200px;
+  height: @baseline;
+  overflow: hidden;
+  /* crop long strings */
+}
+
+#videos .details .song {
+  padding-left: 18px;
+  color: #909090;
+  width: 200px;
+  height: @baseline;
+  overflow: hidden;
+  /* crop long strings */
+}
+
+#videos .details .views {
+  margin-left: 18px;
+  padding-left: 24px;
+  background: transparent url('../../../img/icon-views.png') 0 2px no-repeat;
+  color: #909090;
+  width: 175px;
+  height: @baseline;
+  overflow: hidden;
+  /* crop long strings */
+}
+
+/*  
+END : videos
+------------------------------------------ */
+

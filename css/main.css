@@ -1,0 +1,85 @@
+/* begin utilities */
+
+.roundedButton {
+	border: 1px solid #1f1f1f;
+	padding: 60px 0;
+	text-align: center; 
+	text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #525252;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#525252), to(#3D3D3D));
+	background: -webkit-linear-gradient(#525252, #3D3D3D);
+	background: -moz-linear-gradient(#525252, #3D3D3D);
+	background: -ms-linear-gradient(#525252, #3D3D3D);
+	background: -o-linear-gradient(#525252, #3D3D3D);
+	background: linear-gradient(#525252, #3D3D3D);
+	-pie-background: linear-gradient(#525252, #3D3D3D);
+	behavior: url(/PIE.htc);
+}
+
+/* end utilities */
+
+
+
+
+#swipview-slider {
+
+}
+
+
+
+/*
+@-webkit-keyframes fadeIn {
+   from {
+   		opacity: 1;
+     outline: 3px solid #66D0CD;
+   }
+   to {
+   		opacity: 1;
+     outline: 3px solid #5C5C5C;
+   }
+}
+
+#content-list .column .page:hover {
+   -webkit-animation-name: fadeIn;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate; 
+}
+*/
+
+/* ------------*/
+
+
+
+/* Begin Components */
+
+
+
+/* End Components */
+
+
+#swipeview-slider span {
+
+}
+
+#swipeview-slider .swipeview-active .carousel-description {
+
+}
+
+#container > div > .swipeview-loading {
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#555)),
+
+}
+
+#container > div > .swipeview-loading img,
+#swipeview-slider img.loading {
+	-webkit-transition-duration:0;
+	opacity:0;
+}
+
+#container > div > .swipeview-loading span {
+
+}
