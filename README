@@ -1,0 +1,64 @@
+Handover:
+
+This App is based on Chassis 2.0, which uses Less and PHP to transcompile CSS.
+
+Development files are located in the dev folder and psd folder (these folders are not intended for production).
+
+
+CSS
+---
+
+The Less files are in dev/less and comprise of pages, layouts and components.
+
+Less is used in order to achieve an accurate Baseline grid, for this project the grid is 12 column based on 980px width.
+
+A separate grid can be used for mobile.
+
+CSS is compiled into the CSS folder on page referesh of PHP pages (that include Less.php).
+
+The grid system in Chassis is non prescriptive, if the grid framework is not required, CSS can be saved in the relevant folder and used normally, without the preprocessing step.
+
+
+JavaScript
+----------
+
+All scripts are module based for encapsulation and namespacing, using branching code via arguments to load Zepto or jQuery.
+
+Note: jQuery creates performance issues on mobile (especially on Android devices)
+
+Chassis supports custom events through publish and subscribe methods in chassis.event
+
+Handling of click vs tap is available in chassis.event.TAP_CLICK the typical implmentation being:
+
+$('.next').on(chassis.event.TAP_CLICK, function() {
+	tt.paginate.next();
+});
+
+Chassis also has utility methods for mobile device detection, handling and effects e.g. slide and fade (which use the more performant CSS transitions).
+
+Chassis places device name classes and orientation classes on the body tag, which can be used to manage orientation in embedded Web Viewes, where media queries sometimes fail to respond to orientation changes.
+
+
+Images
+------
+
+Where possible avoid images, they are heavy when used on mobile, background images perform much better (due to how the renderer sets up the display).  
+
+Note: you can -webkit-background-size to correctly size images for low-res and hi-res displays from one image source.
+
+
+Debugging
+---------
+
+Chassis provides classes for debugging CSS in the dev folder, for example debug-grid when applied to the body tag will display the design grid.
+QUnit is also included.
+
+More documentation on Chassis and Baseplate can be found on Github:
+
+https://github.com/flipflop/Baseplate
+
+https://github.com/flipflop/Chassis
+
+
+
+
